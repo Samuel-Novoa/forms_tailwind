@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
-
+     <title>Inicio de session</title>
 </head>
 
 <body class="flex flex-col md:flex-row h-screen">
@@ -15,23 +15,29 @@
      <div class="flex items-center justify-center md:w-1/2">
           <form class="w-full max-w-md m-5">
                <div class="md:flex md:justify-center md:items-center md:flex-wrap md:-mx-3 mb-6">
-                    <div class="md:w-full px-3 mb-6 md:mb-0">
-                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
-                              Email
-                         </label>
-                         <input
-                              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-                              id="email" type="email">
+                    <div class="md:w-full px-3 mb-6">
+                         <label for="email"
+                              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Email</label>
+                         <input type="email" id="email" name="email" required
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                              placeholder="johndoe@example.com">
+
+                         <label for="password" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Contraseña</label>
+                         <input type="password" id="password" name="password" required
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                              placeholder="••••••••">
                     </div>
-                    <div class="md:w-full px-3">
-                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                              for="password">
-                              Password
-                         </label>
-                         <input
-                              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                              id="password" type="password">
-                         <p class="text-gray-600 text-xs italic">XD</p>
+                    <div class="md:w-full px-3 mb-2">
+                         <div class="flex justify-between">
+                              <div><input id="default-checkbox" type="checkbox" value=""
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                   <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-700">Default
+                                        checkbox</label>
+                              </div>
+                              <div><a
+                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer text-sm">Olvide
+                                        la contraseña</a></div>
+                         </div>
                     </div>
                </div>
                <div class="md:flex md:justify-center md:items-center md:flex-wrap md:-mx-3 mb-6">
