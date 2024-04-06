@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Inscripción de Curso</title>
+     <!-- Agrega los estilos de Tailwind CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-     
+
+<body class="bg-gray-100 p-6">
+     <div class="bg-gray-100 min-h-screen flex justify-center items-center">
+          <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+               <h2 class="text-2xl font-semibold mb-4">Inscripción en Curso</h2>
+               <form>
+                    <div class="mb-4">
+                         <label for="course" class="block mb-0.5 text-sm font-medium text-gray-900">Curso deseado</label>
+                         <select id="course" name="course"
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                              <option value="course1">Curso 1 - Introducción a Tailwind CSS</option>
+                              <option value="course2">Curso 2 - Desarrollo Web Avanzado</option>
+                              <option value="course3">Curso 3 - Fundamentos de JavaScript</option>
+                         </select>
+                    </div>
+                    <div class="mb-4">
+                         <label for="name" class="block mb-0.5 text-sm font-medium text-gray-900">Nombre</label>
+                         <input type="text" id="name" name="name"
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                              placeholder="Nombre completo" required>
+                    </div>
+                    <div class="mb-4">
+                         <label for="periodo"
+                                   class="block mb-0.5 text-sm font-medium text-gray-900">Edad</label>
+                              <input type="number" id="periodo" name="periodo"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   min="0">
+                    </div>
+                    <div class="mb-4">
+                         <label for="email" class="block mb-0.5 text-sm font-medium text-gray-900">Email</label>
+                         <input type="email" id="email" name="email"
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                              placeholder="correo@example.com" required>
+                    </div>
+                    <div class="mb-4">
+                         <label for="phone" class="block mb-0.5 text-sm font-medium text-gray-900">Teléfono</label>
+                         <input type="tel" id="phone" name="phone"
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                              placeholder="Número de teléfono">
+                    </div>
+                    <div class="mb-4">
+                         <label for="course" class="block mb-0.5 text-sm font-medium text-gray-900">Programa</label>
+                         <select id="course" name="course"
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                              <option value="course1">Ing. Software</option>
+                              <option value="course2">Ing. Sistemas</option>
+                              <option value="course3">Ing. Industrial</option>
+                         </select>
+                    </div>
+                    <div class="mb-4">
+                         <label for="course" class="block mb-0.5 text-sm font-medium text-gray-900">Jornada</label>
+                         <select id="course" name="course"
+                              class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                              <option value="course1">Diurno</option>
+                              <option value="course2">Nocturno</option>
+                         </select>
+                    </div>
+                    <div class="mb-4">
+                         <label for="periodo"
+                                   class="block mb-0.5 text-sm font-medium text-gray-900">Periodo actual cursando</label>
+                              <input type="number" id="periodo" name="periodo"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   min="0">
+                    </div>
+                    <button type="submit"
+                         class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Enviar</button>
+               </form>
+          </div>
+     </div>
+
 </body>
+
 </html>
