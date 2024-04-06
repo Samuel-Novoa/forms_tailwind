@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <title>Registro de Estudiantes</title>
+</head>
+
+<body class="bg-neutral-200">
+     <div class="flex justify-center items-center h-screen">
+          <div class="container mx-auto px-4">
+               <div class="w-full mx-auto sm max-w-640 rounded-lg bg-white p-1">
+                    <h1 class="text-3xl font-bold uppercase text-center mt-6">Registro</h1>
+                    <form action="#" method="POST" class="p-4 sm:p-6">
+                         <div class="mb-4">
+                              <label for="nombre" class="block mb-0.5 text-sm font-medium text-gray-900">Nombre</label>
+                              <input type="text" id="nombre" name="nombre" required
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   placeholder="John Doe">
+                         </div>
+                         <div class="mb-4">
+                              <label for="email" class="block mb-0.5 text-sm font-medium text-gray-900">Email</label>
+                              <input type="email" id="email" name="email" required
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   placeholder="johndoe@example.com">
+                         </div>
+                         <div class="mb-4">
+                              <label for="password"
+                                   class="block mb-0.5 text-sm font-medium text-gray-900">Contraseña</label>
+                              <input type="password" id="password" name="password" required
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   placeholder="••••••••">
+                         </div>
+                         <div class="mb-4">
+                              <label for="edad" class="block mb-0.5 text-sm font-medium text-gray-900">Edad</label>
+                              <input type="number" id="edad" name="edad" required
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   placeholder="18">
+                         </div>
+                         <div class="mb-4">
+                              <label for="nivel-educativo" class="block mb-0.5 text-sm font-medium text-gray-900">Nivel
+                                   Educativo</label>
+                              <select id="nivel-educativo" name="nivel-educativo" required
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-3 dark:text-black focus:outline-none">
+                                   <option value="none" selected>Selecciona un nivel educativo</option>
+                                   <option value="primaria">Primaria</option>
+                                   <option value="secundaria">Secundaria</option>
+                                   <option value="preparatoria">Preparatoria</option>
+                                   <option value="licenciatura">Licenciatura</option>
+                                   <option value="posgrado">Posgrado</option>
+                              </select>
+                         </div>
+                         <div class="mb-4">
+                              <label for="institucion"
+                                   class="block mb-0.5 text-sm font-medium text-gray-900">Institución o Escuela a
+                                   la que Pertenece</label>
+                              <input type="text" id="institucion" name="institucion"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   placeholder="Ejemplo: IUDC">
+                         </div>
+                         <button type="submit"
+                              class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-2">Registrar</button>
+                    </form>
+               </div>
+               <style>
+                    @media (min-width: 640px) {
+                         .max-w-640 {
+                              max-width: 640px;
+                         }
+                    }
+
+                    @media (min-width: 768px) {
+                         .max-w-640 {
+                              max-width: 768px;
+                         }
+                    }
+
+                    @media (min-width: 1024px) {
+                         .max-w-640 {
+                              max-width: 500px;
+                         }
+                    }
+               </style>
+          </div>
+     </div>
+</body>
+
+</html>
